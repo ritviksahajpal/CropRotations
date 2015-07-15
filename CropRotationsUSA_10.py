@@ -48,8 +48,9 @@ csv_files_to_delete      = [] # List of csv files which will be deleted at the e
 base_dir           = 'C:\\Users\\ritvik\\Documents\\PhD\\Projects\\CropIntensity' # base_dir contains all the input and output files
 inp_dir            = base_dir+os.sep+'input' # inp_dir contains all the input CDL files
 analysis_dir       = base_dir+os.sep+'src' # analysis_dir contains all the source files
-MIN_ID             = 300 # Generated crop rotations will have identifiers startin from this number
+MIN_ID             = 400 # Generated crop rotations will have identifiers startin from this number (lowest value for this number should be 400).
 USE_EXISTING_DATA  = True
+DO_GLM             = False
 EXISTING_ROTATIONS = 'existing_rotations.csv' # Name of file containing rotations whose identifiers we want to preserve
                                               # E.g. continuous corn can be identified by the number 450, and if we mark it such
                                               # in the EXISTING_ROTATIONS file, any time we encounter continuous corn we will reclass
@@ -69,10 +70,11 @@ list_min_perc_of_rot   = [0.005]#[0.005]#[0.0,0.005,0.01,0.05,0.1,0.2,0.6,1.0]#[
 #list_min_perc_of_rot  = [0.01]#[0.0,0.001,0.005,0.01,1]
 remove_urban_and_wtlnd = False #Should be false if you want to create a wall to wall product
 
-GRASSLANDS               = 'grasslands_all.txt'
-FORESTS                  = 'forests_all.txt'
-CROPS                    = 'crops_all.txt'
-URBAN_WETLANDS           = 'urban_wetlands.txt'
+RECL_FAO                = 'recl_crops_glm.txt'
+GRASSLANDS              = 'grasslands_all.txt'
+FORESTS                 = 'forests_all.txt'
+CROPS                   = 'crops_all.txt'
+URBAN_WETLANDS          = 'urban_wetlands.txt'
 # Determine the crop rotation sequence
 #############################################################################
 # CROPS                                 HERBS                                   WOODY
@@ -147,6 +149,27 @@ def lev(a, b):
                 if(a[i] <> b[i]):
                    cnt = cnt + 1
         return cnt
+
+###############################################################################
+# Reclassifies CDL data to C3/C4 classifications suitable to GLM
+# @param  out_dir:   Path to output directory
+# @param  ras_files: List of CDL files to convert to reclass to GLM crop class
+# @return List of CDL files now reclassified to GLM crop class
+###############################################################################
+def reclass_CDL_to_GLM(out_dir, ras_files):
+    glm_ras_files = []
+
+    try:
+        for ras in ras_files:
+            out_fl = out_dir+os.sep+'glm_'+os.path.basename(ras)[:-11][-7:]
+
+            out_ras = ReclassByASCIIFile(ras, RECL_FAO)
+            out_ras.save(out_fl)
+            glm_ras_files.append(out_fl)
+    except:
+        logging.info(arcpy.GetMessages())
+
+    return glm_ras_files
 
 ###############################################################################
 # Reads a file containing list of pairs of CDL id's and their names. Returns list of CDL IDs
@@ -686,7 +709,13 @@ def initiate(list_min_area_rot, list_min_rate_increase, local_first_yr, local_la
                             local_first_yr = range_of_yrs[j]
                             frst = True 
                         state_ras_files.append(''.join(list_files))
-    
+
+        print state_ras_files
+        pdb.set_trace()
+        if DO_GLM:
+            # Convert state_ras_files to format compatible with GLM
+            state_ras_files = reclass_CDL_to_GLM(out_dir, state_ras_files)
+
         if len(state_ras_files) > num_rot:
             state_ras_files = state_ras_files[:num_rot]
             local_last_yr   = local_first_yr + num_rot - 1

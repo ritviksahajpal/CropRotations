@@ -1,0 +1,170 @@
+Item Name									functional crop type		functional crop id
+Anise, badian, fennel, coriander				C3annual						1
+Artichokes										C3annual						1
+Asparagus										C3annual						1
+Barley											C3annual						1
+Bastfibres, other								C3annual						1
+Buckwheat										C3annual						1
+Cabbages and other brassicas					C3annual						1
+Canary seed										C3annual						1
+Carrots and turnips								C3annual						1
+Cassava											C3annual						1
+Cassava leaves									C3annual						1
+Castor oil seed									C3annual						1
+Cauliflowers and broccoli						C3annual						1
+Cereals, nes									C3annual						1
+Chicory roots									C3annual						1
+Chillies and peppers, dry						C3annual						1
+Chillies and peppers, green						C3annual						1
+Cotton lint										C3annual						1
+Cottonseed										C3annual						1
+Cucumbers and gherkins							C3annual						1
+Eggplants (aubergines)							C3annual						1
+Fibre crops nes									C3annual						1
+Flax fibre and tow								C3annual						1
+Fonio											C3annual						1
+Garlic											C3annual						1
+Ginger											C3annual						1
+Grain, mixed									C3annual						1
+Hemp tow waste									C3annual						1
+Hempseed										C3annual						1
+Hops											C3annual						1
+Jute											C3annual						1
+Leeks, other alliaceous vegetables				C3annual						1
+Lettuce and chicory								C3annual						1
+Linseed											C3annual						1
+Melons, other (inc.cantaloupes)					C3annual						1
+Melonseed										C3annual						1
+Mushrooms and truffles							C3annual						1
+Mustard seed									C3annual						1
+Oats											C3annual						1
+Okra											C3annual						1
+Onions, dry										C3annual						1
+Onions, shallots, green							C3annual						1
+Peppermint										C3annual						1
+Poppy seed										C3annual						1
+Potatoes										C3annual						1
+Pumpkins, squash and gourds						C3annual						1
+Pyrethrum, dried								C3annual						1
+Quinoa											C3annual						1
+Ramie											C3annual						1
+Rapeseed										C3annual						1
+Rice, paddy										C3annual						1
+Roots and tubers, nes							C3annual						1
+Rye												C3annual						1
+Safflower seed									C3annual						1
+Seed cotton										C3annual						1
+Sesame seed										C3annual						1
+Sisal											C3annual						1
+Spices, nes										C3annual						1
+Spinach											C3annual						1
+Strawberries									C3annual						1
+Sugar beet										C3annual						1
+Sunflower seed									C3annual						1
+Sweet potatoes									C3annual						1
+Taro (cocoyam)									C3annual						1
+Tobacco, unmanufactured							C3annual						1
+Tomatoes										C3annual						1
+Triticale										C3annual						1
+Vegetables, fresh nes							C3annual						1
+Watermelons										C3annual						1
+Wheat											C3annual						1
+Yams											C3annual						1
+Yautia (cocoyam)								C3annual						1
+Agave fibres nes								C3perennial						2
+Almonds, with shell								C3perennial						2
+Apples											C3perennial						2
+Apricots										C3perennial						2
+Areca nuts										C3perennial						2
+Avocados										C3perennial						2
+Bananas											C3perennial						2
+Berries nes										C3perennial						2
+Blueberries										C3perennial						2
+Brazil nuts, with shell							C3perennial						2
+Carobs											C3perennial						2
+Cashew nuts, with shell							C3perennial						2
+Cashewapple										C3perennial						2
+Cherries										C3perennial						2
+Cherries, sour									C3perennial						2
+Chestnut										C3perennial						2
+Cinnamon (canella)								C3perennial						2
+Cloves											C3perennial						2
+Cocoa, beans									C3perennial						2
+Coconuts										C3perennial						2
+Coffee, green									C3perennial						2
+Coir											C3perennial						2
+Cranberries										C3perennial						2
+Currants										C3perennial						2
+Dates											C3perennial						2
+Figs											C3perennial						2
+Fruit, citrus nes								C3perennial						2
+Fruit, fresh nes								C3perennial						2
+Fruit, pome nes									C3perennial						2
+Fruit, stone nes								C3perennial						2
+Fruit, tropical fresh nes						C3perennial						2
+Gooseberries									C3perennial						2
+Grapefruit (inc. pomelos)						C3perennial						2
+Grapes											C3perennial						2
+Gums, natural									C3perennial						2
+Hazelnuts, with shell							C3perennial						2
+Jojoba seed										C3perennial						2
+Kapok fibre										C3perennial						2
+Kapok fruit										C3perennial						2
+Kapokseed in shell								C3perennial						2
+Karite nuts (sheanuts)							C3perennial						2
+Kiwi fruit										C3perennial						2
+Kola nuts										C3perennial						2
+Lemons and limes								C3perennial						2
+Mangoes, mangosteens, guavas					C3perennial						2
+Manila fibre (abaca)							C3perennial						2
+Mat_											C3perennial						2
+Nutmeg, mace and cardamoms						C3perennial						2
+Nuts, nes										C3perennial						2
+Oil, palm										C3perennial						2
+Oil, palm fruit									C3perennial						2
+Oilseeds nes									C3perennial						2
+Olives											C3perennial						2
+Oranges											C3perennial						2
+Palm kernels									C3perennial						2
+Papayas											C3perennial						2
+Peaches and nectarines							C3perennial						2
+Pears											C3perennial						2
+Pepper (piper spp.)								C3perennial						2
+Persimmons										C3perennial						2
+Pineapples										C3perennial						2
+Pistachios										C3perennial						2
+Plantains										C3perennial						2
+Plums and sloes									C3perennial						2
+Quinces											C3perennial						2
+Raspberries										C3perennial						2
+Rubber, natural									C3perennial						2
+Sugar crops, nes								C3perennial						2
+Tallowtree seed									C3perennial						2
+Tangerines, mandarins, clementines, satsumas	C3perennial						2
+Tea												C3perennial						2
+Tung nuts										C3perennial						2
+Walnuts, with shell								C3perennial						2
+Vanilla											C3perennial						2
+Maize											C4annual						3
+Maize, green									C4annual						3
+Millet											C4annual						3
+Popcorn											C4annual						3
+Sorghum											C4annual						3
+Sugar cane										C4perennial						4
+Beans, dry										N-fixing						5
+Beans, green									N-fixing						5
+Chick peas										N-fixing						5
+Cow peas, dry									N-fixing						5
+Groundnuts, with shell							N-fixing						5
+Lentils											N-fixing						5
+Peas, dry										N-fixing						5
+Peas, green										N-fixing						5
+Pigeon peas										N-fixing						5
+Pulses, nes										N-fixing						5
+Soybeans										N-fixing						5
+String beans									N-fixing						5
+Bambara beans									N-fixing						5
+Broad beans, horse beans, dry					N-fixing						5
+Lupins											N-fixing						5
+Vegetables, leguminous nes						N-fixing						5
+Vetches											N-fixing						5
