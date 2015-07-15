@@ -31,6 +31,7 @@ CDL_VAL_NAME_MAP         = 'CDL_Value_Name_Mapping.csv' # Name of file which map
 m2_to_ha                 = 0.0001
 rasters_to_delete        = [] # List of rasters which will be deleted at the end
 csv_files_to_delete      = [] # List of csv files which will be deleted at the end
+
 #######################################################################
 # USER SPECIFIED PARAMETERS
 # The following parameters are user specified and might need to be changed
@@ -53,7 +54,7 @@ EXISTING_ROTATIONS = 'existing_rotations.csv' # Name of file containing rotation
                                               # E.g. continuous corn can be identified by the number 450, and if we mark it such
                                               # in the EXISTING_ROTATIONS file, any time we encounter continuous corn we will reclass
                                               # it to VALUE 450 in ArcGIS
-list_states            = 'OH.txt' # Name of the file which contains the list of states (or watersheds/counties etc) to process
+list_states            = 'LakeStates.txt' # Name of the file which contains the list of states (or watersheds/counties etc) to process
 delete_rasters         = False  # delete_rasters should be true if all temporary data needs to be deleted
 delete_csv_files       = True  # delete teh temporary csv files that are generated
 append_for_grs_urb     = False # append the forest, grassland and urban data
