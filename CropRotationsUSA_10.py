@@ -154,14 +154,20 @@ def lev(a, b):
 # @param
 # @return
 ###############################################################################
-def reclass_CDL_to_GLM():
-    #RECL_FAO
+def reclass_CDL_to_GLM(out_dir, ras_files):
+    glm_ras_files = []
+
     try:
-        outRaster = ReclassByASCIIFile(inRaster, inRemapFile)
-        # Save the output
-        outRaster.save("C:/sapyexamples/output/recslope")
+        for ras in ras_files:
+            out_fl = out_dir+os.sep+'glm_'+os.path.basename(ras)[:-11][-7:]
+
+            out_ras = ReclassByASCIIFile(ras, RECL_FAO)
+            out_ras.save(out_fl)
+            glm_ras_files.append(out_fl)
     except:
         logging.info(arcpy.GetMessages())
+
+    return glm_ras_files
 
 ###############################################################################
 # Reads a file containing list of pairs of CDL id's and their names. Returns list of CDL IDs
@@ -706,7 +712,7 @@ def initiate(list_min_area_rot, list_min_rate_increase, local_first_yr, local_la
         pdb.set_trace()
         if DO_GLM:
             # Convert state_ras_files to format compatible with GLM
-            reclass_CDL_to_GLM(state_ras_files)
+            state_ras_files = reclass_CDL_to_GLM(out_dir, state_ras_files)
 
         if len(state_ras_files) > num_rot:
             state_ras_files = state_ras_files[:num_rot]
