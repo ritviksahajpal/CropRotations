@@ -1,0 +1,23 @@
+1  Corn
+3  Rice
+4  Sorghum
+5  Soybeans
+6  Sunflower
+21 Barley 
+22 Durum Wheat 
+23 Spring Wheat	 
+24 Winter Wheat 
+25 Other Small Grains
+26 Dbl. Crop WinWht/Soy 
+27 Rye 
+28 Oats 
+29 Millet 
+31 Canola 
+32 Flaxseed 
+33 Safflower 
+36 Alfalfa 
+41 Sugarbeets 
+42 Dry beans 
+52 Lentils 
+53 Peas
+61 Fallow/Idle Cropland 

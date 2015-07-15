@@ -1,0 +1,12 @@
+37  Other Hay
+57  Herbs
+58  Clover/Wildflowers
+59  Sod/GrassSeed
+60  Switchgrass
+62  Pasture/Grass
+64  Shrubland
+97  Scrub/Shrub Wetlands
+152 Shrubland
+171 Grassland Herbaceous 
+176 GRASSLAND ALL
+181 Pasture Hay

@@ -1,0 +1,7 @@
+63  Woodland
+65  Barren
+70  Christmas Trees
+131 Barren
+141 Deciduous Forest
+142 Evergreen Forest
+143 Mixed Forest

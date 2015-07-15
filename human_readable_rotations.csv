@@ -1,0 +1,178 @@
+10,Corn,Corn,Corn,Corn
+1778,Corn,Corn,Corn,Soybeans
+200,Corn,Corn,Spring Wheat,Corn
+571,Corn,Corn,Winter Wheat,Winter Wheat
+247,Corn,Corn,Alfalfa,Alfalfa
+4951,Corn,Corn,Soybeans,Corn
+1505,Corn,Corn,Soybeans,Winter Wheat
+5,Corn,Corn,Soybeans,Soybeans
+124,Corn,Winter Wheat,Corn,Winter Wheat
+1940,Corn,Winter Wheat,Corn,Soybeans
+195,Corn,Winter Wheat,Winter Wheat,Corn
+46,Corn,Alfalfa,Corn,Alfalfa
+92,Corn,Alfalfa,Winter Wheat,Corn
+201,Corn,Alfalfa,Alfalfa,Corn
+297,Corn,Alfalfa,Alfalfa,Alfalfa
+18,Corn,Soybeans,Corn,Corn
+8,Corn,Soybeans,Corn,Soybeans
+2279,Corn,Soybeans,Spring Wheat,Corn
+35,Corn,Soybeans,Winter Wheat,Corn
+14,Corn,Soybeans,Soybeans,Corn
+322,Corn,Soybeans,Soybeans,Soybeans
+234,Corn,Fallow/Idle Cropland,Winter Wheat,Corn
+268,Corn,Fallow/Idle Cropland,Sorghum,Corn
+259,Corn,Fallow/Idle Cropland,Soybeans,Corn
+109,Spring Wheat,Corn,Corn,Spring Wheat
+2029,Spring Wheat,Corn,Soybeans,Spring Wheat
+22,Spring Wheat,Spring Wheat,Spring Wheat,Spring Wheat
+2002,Spring Wheat,Spring Wheat,Winter Wheat,Corn
+1386,Spring Wheat,Canola,Spring Wheat,Spring Wheat
+1380,Spring Wheat,Canola,Spring Wheat,Canola
+216,Spring Wheat,Sugarbeets,Soybeans,Spring Wheat
+3110,Spring Wheat,Soybeans,Corn,Soybeans
+84,Spring Wheat,Soybeans,Spring Wheat,Soybeans
+969,Spring Wheat,Soybeans,Soybeans,Spring Wheat
+1668,Winter Wheat,Corn,Winter Wheat,Winter Wheat
+138,Winter Wheat,Corn,Soybeans,Winter Wheat
+99,Winter Wheat,Corn,Soybeans,Soybeans
+209,Winter Wheat,Corn,Fallow/Idle Cropland,Winter Wheat
+175,Winter Wheat,Winter Wheat,Corn,Corn
+328,Winter Wheat,Winter Wheat,Corn,Winter Wheat
+3,Winter Wheat,Winter Wheat,Winter Wheat,Winter Wheat
+7893,Winter Wheat,Winter Wheat,Winter Wheat,Sorghum
+1932,Winter Wheat,Winter Wheat,Winter Wheat,Soybeans
+20,Winter Wheat,Winter Wheat,Alfalfa,Alfalfa
+4862,Winter Wheat,Winter Wheat,Sorghum,Sorghum
+429,Winter Wheat,Winter Wheat,Sorghum,Soybeans
+682,Winter Wheat,Winter Wheat,Soybeans,Corn
+94,Winter Wheat,Winter Wheat,Soybeans,Winter Wheat
+701,Winter Wheat,Winter Wheat,Soybeans,Soybeans
+56,Winter Wheat,Winter Wheat,Fallow/Idle Cropland,Winter Wheat
+42,Winter Wheat,Winter Wheat,Fallow/Idle Cropland,Fallow/Idle Cropland
+214,Winter Wheat,Alfalfa,Corn,Winter Wheat
+3225,Winter Wheat,Sorghum,Corn,Winter Wheat
+88,Winter Wheat,Sorghum,Sorghum,Winter Wheat
+305,Winter Wheat,Sorghum,Sorghum,Sorghum
+189,Winter Wheat,Sorghum,Fallow/Idle Cropland,Winter Wheat
+126,Winter Wheat,Soybeans,Corn,Winter Wheat
+6854,Winter Wheat,Soybeans,Corn,Soybeans
+4783,Winter Wheat,Soybeans,Winter Wheat,Winter Wheat
+34,Winter Wheat,Soybeans,Winter Wheat,Soybeans
+11,Winter Wheat,Soybeans,Soybeans,Winter Wheat
+780,Winter Wheat,Fallow/Idle Cropland,Corn,Winter Wheat
+5855,Winter Wheat,Fallow/Idle Cropland,Winter Wheat,Winter Wheat
+81,Winter Wheat,Fallow/Idle Cropland,Alfalfa,Winter Wheat
+196,Winter Wheat,Fallow/Idle Cropland,Soybeans,Winter Wheat
+24,Winter Wheat,Fallow/Idle Cropland,Fallow/Idle Cropland,Winter Wheat
+1098,Rice,Rice,Rice,Rice
+1142,Canola,Spring Wheat,Canola,Spring Wheat
+87,Alfalfa,Corn,Corn,Alfalfa
+266,Alfalfa,Corn,Alfalfa,Alfalfa
+38,Alfalfa,Alfalfa,Corn,Corn
+28,Alfalfa,Alfalfa,Alfalfa,Alfalfa
+204,Sorghum,Corn,Winter Wheat,Sorghum
+352,Sorghum,Corn,Sorghum,Sorghum
+260,Sorghum,Winter Wheat,Winter Wheat,Sorghum
+4167,Sorghum,Winter Wheat,Sorghum,Sorghum
+156,Sorghum,Winter Wheat,Sorghum,Fallow/Idle Cropland
+203,Sorghum,Alfalfa,Alfalfa,Sorghum
+257,Sorghum,Sorghum,Corn,Sorghum
+57,Sorghum,Sorghum,Sorghum,Sorghum
+220,Sorghum,Soybeans,Corn,Sorghum
+941,Sorghum,Soybeans,Sorghum,Soybeans
+190,Sorghum,Fallow/Idle Cropland,Winter Wheat,Sorghum
+86,Sugarbeets,Sugarbeets,Sugarbeets,Sugarbeets
+1256,Soybeans,Corn,Corn,Corn
+19,Soybeans,Corn,Corn,Soybeans
+45,Soybeans,Corn,Winter Wheat,Winter Wheat
+312,Soybeans,Corn,Winter Wheat,Soybeans
+2,Soybeans,Corn,Soybeans,Corn
+223,Soybeans,Corn,Soybeans,Winter Wheat
+121,Soybeans,Corn,Soybeans,Soybeans
+3414,Soybeans,Spring Wheat,Corn,Soybeans
+33,Soybeans,Spring Wheat,Sugarbeets,Soybeans
+30,Soybeans,Spring Wheat,Soybeans,Spring Wheat
+7174,Soybeans,Spring Wheat,Soybeans,Soybeans
+41,Soybeans,Winter Wheat,Corn,Soybeans
+1107,Soybeans,Winter Wheat,Winter Wheat,Corn
+1,Soybeans,Winter Wheat,Winter Wheat,Soybeans
+221,Soybeans,Winter Wheat,Alfalfa,Alfalfa
+336,Soybeans,Winter Wheat,Soybeans,Corn
+145,Soybeans,Winter Wheat,Soybeans,Winter Wheat
+167,Soybeans,Winter Wheat,Soybeans,Soybeans
+612,Soybeans,Winter Wheat,Fallow/Idle Cropland,Soybeans
+69,Soybeans,Sorghum,Soybeans,Soybeans
+7,Soybeans,Soybeans,Corn,Corn
+13,Soybeans,Soybeans,Corn,Soybeans
+224,Soybeans,Soybeans,Spring Wheat,Corn
+2996,Soybeans,Soybeans,Spring Wheat,Soybeans
+1929,Soybeans,Soybeans,Winter Wheat,Corn
+519,Soybeans,Soybeans,Winter Wheat,Winter Wheat
+164,Soybeans,Soybeans,Winter Wheat,Soybeans
+2106,Soybeans,Soybeans,Soybeans,Corn
+4,Soybeans,Soybeans,Soybeans,Soybeans
+227,Soybeans,Fallow/Idle Cropland,Winter Wheat,Soybeans
+3554,Soybeans,Fallow/Idle Cropland,Soybeans,Soybeans
+231,Fallow/Idle Cropland,Corn,Corn,Fallow/Idle Cropland
+59,Fallow/Idle Cropland,Corn,Winter Wheat,Fallow/Idle Cropland
+82,Fallow/Idle Cropland,Corn,Soybeans,Fallow/Idle Cropland
+673,Fallow/Idle Cropland,Corn,Fallow/Idle Cropland,Fallow/Idle Cropland
+68,Fallow/Idle Cropland,Spring Wheat,Spring Wheat,Fallow/Idle Cropland
+6256,Fallow/Idle Cropland,Winter Wheat,Corn,Fallow/Idle Cropland
+1161,Fallow/Idle Cropland,Winter Wheat,Winter Wheat,Winter Wheat
+6451,Fallow/Idle Cropland,Winter Wheat,Winter Wheat,Fallow/Idle Cropland
+67,Fallow/Idle Cropland,Winter Wheat,Sorghum,Fallow/Idle Cropland
+51,Fallow/Idle Cropland,Winter Wheat,Fallow/Idle Cropland,Winter Wheat
+105,Fallow/Idle Cropland,Soybeans,Winter Wheat,Fallow/Idle Cropland
+582,Fallow/Idle Cropland,Soybeans,Soybeans,Fallow/Idle Cropland
+9867,Fallow/Idle Cropland,Soybeans,Fallow/Idle Cropland,Fallow/Idle Cropland
+183,Fallow/Idle Cropland,Fallow/Idle Cropland,Corn,Fallow/Idle Cropland
+2335,Fallow/Idle Cropland,Fallow/Idle Cropland,Fallow/Idle Cropland,Winter Wheat
+2049,Spring Wheat,Spring Wheat,Sunflower,Spring Wheat
+10167,Durum Wheat,Durum Wheat,Durum Wheat,Durum Wheat
+5639,Spring Wheat,Soybeans,Soybeans,Soybeans
+1452,Spring Wheat,Spring Wheat,Canola,Spring Wheat
+6175,Corn,Soybeans,Spring Wheat,Soybeans
+3318,Winter Wheat,Corn,Soybeans,Corn
+40,Winter Wheat,Fallow/Idle Cropland,Winter Wheat,Fallow/Idle Cropland
+10467,Rice,Rice,Soybeans,Rice
+10468,Soybeans,Soybeans,Rice,Soybeans
+10469,Soybeans,Rice,Soybeans,Soybeans
+10470,Rice,Soybeans,Soybeans,Soybeans
+12,Rice,Soybeans,Rice,Soybeans
+10471,Soybeans,Rice,Soybeans,Rice
+10472,Rice,Soybeans,Soybeans,Rice
+79,Rice,Soybeans,Rice,Rice
+26,Soybeans,Soybeans,Soybeans,Rice
+155,Fallow/Idle Cropland,Fallow/Idle Cropland,Fallow/Idle Cropland,Fallow/Idle Cropland
+10772,Rice,Rice,Fallow/Idle Cropland,Rice
+10773,Sorghum,Soybeans,Soybeans,Soybeans
+279,Rice,Rice,Rice,Fallow/Idle Cropland
+58,Soybeans,Dbl. Crop WinWht/Soy,Soybeans,Soybeans
+9,Alfalfa,Corn,Corn,Corn
+139,Alfalfa,Alfalfa,Alfalfa,Corn
+11073,Soybeans,Dbl. Crop WinWht/Soy,Corn,Soybeans
+11074,Corn,Corn,Dbl. Crop WinWht/Soy,Corn
+11374,Dbl. Crop WinWht/Soy,Dbl. Crop WinWht/Soy,Dbl. Crop WinWht/Soy,Dbl. Crop WinWht/Soy
+11375,Dbl. Crop WinWht/Soy,Dbl. Crop WinWht/Soy,Corn,Dbl. Crop WinWht/Soy
+11675,Fallow/Idle Cropland,Fallow/Idle Cropland,Winter Wheat,Fallow/Idle Cropland
+11975,Oats,Oats,Oats,Oats
+11976,Barley,Barley,Barley,Barley
+12276,Corn,Fallow/Idle Cropland,Fallow/Idle Cropland,Corn
+12277,Soybeans,Fallow/Idle Cropland,Fallow/Idle Cropland,Soybeans
+23,Soybeans,Soybeans,Fallow/Idle Cropland,Soybeans
+12577,Corn,Corn,Winter Wheat,Corn
+162,Barley,Barley,Sugarbeets,Barley
+12877,Winter Wheat,Fallow/Idle Cropland,Fallow/Idle Cropland,Fallow/Idle Cropland
+222,Winter Wheat,Alfalfa,Alfalfa,Alfalfa
+316,Fallow/Idle Cropland,Fallow/Idle Cropland,Spring Wheat,Fallow/Idle Cropland
+100,Spring Wheat,Fallow/Idle Cropland,Winter Wheat,Fallow/Idle Cropland
+37,Spring Wheat,Spring Wheat,Fallow/Idle Cropland,Spring Wheat
+70,Spring Wheat,Fallow/Idle Cropland,Spring Wheat,Fallow/Idle Cropland
+188,Fallow/Idle Cropland,Spring Wheat,Fallow/Idle Cropland,Spring Wheat
+13177,Alfalfa,Alfalfa,Barley,Alfalfa
+75,Spring Wheat,Spring Wheat,Winter Wheat,Spring Wheat
+13178,Winter Wheat,Winter Wheat,Spring Wheat,Winter Wheat
+85,Barley,Alfalfa,Alfalfa,Alfalfa
+169,Barley,Spring Wheat,Spring Wheat,Spring Wheat
+13179,Winter Wheat,Spring Wheat,Winter Wheat,Spring Wheat

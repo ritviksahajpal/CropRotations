@@ -1,0 +1,102 @@
+1  Corn
+2  Cotton
+3  Rice
+4  Sorghum
+5  Soybeans
+6  Sunflower
+10 Peanuts
+11 Tobacco
+12 Sweet Corn
+13 Pop. or Orn. Corn
+14 Mint
+21 Barley 
+22 Durum Wheat 
+23 Spring Wheat 
+24 Winter Wheat 
+25 Small Grains
+26 Double Crop:Winter Wheat, Soy 
+27 Rye 
+28 Oats 
+29 Millet 
+30 Speltz
+31 Canola 
+32 Flaxseed 
+33 Safflower
+34 RapeSeed
+35 Mustard
+36 Alfalfa
+38 Camelina
+39 Buckwheat
+41 Sugarbeets 
+42 Dry Beans 
+43 Potatoes
+44 Other Crops
+45 Sugarcane
+46 Sweet Potatoes
+47 Miscellaneous Fruits,Veg
+48 Watermelons
+49 Onions
+50 Pickles
+51 ChickPeas
+52 Lentils
+53 Peas
+54 Tomatoes
+55 Caneberries
+56 Hops
+61 Fallow/Idle
+66  Cherries
+67  Peaches
+68  Apples
+69  Grapes
+71  Other Tree Nuts
+72  Citrus
+74  Pecans
+75  Almonds
+76  Walnuts
+77  Pears
+204 Pistachios
+205 Triticale
+206 Carrots
+207 Asparagus
+208 Garlic
+209 Cantaloupes
+210 Prunes
+211 Olives
+212 Oranges
+213 Honeydew Melons
+214 Broccoli
+216 Peppers
+217 Pomegrantes
+218 Nectarines
+219 Greens
+220 Plums
+221 Strawberries
+222 Squash
+223 Apricots
+224 Vetch
+225 Double Crop: Winter Wheat, Corn
+226 Double Crop: Oats, Corn
+227 Lettuce
+229 Pumpkins
+230 Double Crop: Lettuce, Durum Wheat
+231 Double Crop: Lettuce, Cantaloupe
+232 Double Crop: Lettuce, Upland Cotton
+233 Double Crop: Lettuce, Barley
+234 Double Crop: Durum Wheat, Sorghum
+235 Double Crop: Barley, Sorghum
+236 Double Crop: Winter Wheat, Sorghum
+237 Double Crop: Barley, Corn
+238 Double Crop: Winter Wheat, Cotton
+239 Double Crop: Soybeans, Cotton
+240 Double Crop: Soybeans, Oats
+241 Double Crop: Corn, Soybeans
+242 Blueberries
+243 Cabbage
+244 Cauliflower	
+245 Celery
+246 Radishes	
+247 Turnips
+248 Eggplants	
+249 Gourds
+250 Cranberries	
+254 Dbl Crop Barley/Soybeans
