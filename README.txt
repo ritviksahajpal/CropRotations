@@ -1,4 +1,10 @@
-23rd march, 2012:
+15th July 2015:
+CropRotationsUSA_10.py contains ArcGIS 10 compatible version of code
+All states have data from 2008 onwards
+
+==============================================================================
+
+23rd March, 2012:
 CropRotationsUSA_10.py contains ArcGIS 10 compatible version of code
 CropRotationsUSA_9.3.py contains ArcGIS 10 compatible version of code
 All states have data from at least 2008 - 2011
