@@ -151,8 +151,9 @@ def lev(a, b):
 
 ###############################################################################
 # Reclassifies CDL data to C3/C4 classifications suitable to GLM
-# @param
-# @return
+# @param  out_dir:   Path to output directory
+# @param  ras_files: List of CDL files to convert to reclass to GLM crop class
+# @return List of CDL files now reclassified to GLM crop class
 ###############################################################################
 def reclass_CDL_to_GLM(out_dir, ras_files):
     glm_ras_files = []
