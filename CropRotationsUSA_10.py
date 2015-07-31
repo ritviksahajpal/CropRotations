@@ -50,30 +50,31 @@ inp_dir            = base_dir+os.sep+'input' # inp_dir contains all the input CD
 analysis_dir       = base_dir+os.sep+'src' # analysis_dir contains all the source files
 MIN_ID             = 400 # Generated crop rotations will have identifiers startin from this number (lowest value for this number should be 400).
 USE_EXISTING_DATA  = True
-DO_GLM             = False
+DO_GLM             = True
 EXISTING_ROTATIONS = 'existing_rotations.csv' # Name of file containing rotations whose identifiers we want to preserve
                                               # E.g. continuous corn can be identified by the number 450, and if we mark it such
                                               # in the EXISTING_ROTATIONS file, any time we encounter continuous corn we will reclass
                                               # it to VALUE 450 in ArcGIS
-list_states            = 'LakeStates.txt' # Name of the file which contains the list of states (or watersheds/counties etc) to process
+list_states            = 'states_48.txt' # Name of the file which contains the list of states (or watersheds/counties etc) to process
 delete_rasters         = False  # delete_rasters should be true if all temporary data needs to be deleted
 delete_csv_files       = True  # delete teh temporary csv files that are generated
 append_for_grs_urb     = False # append the forest, grassland and urban data
 bool_merge_ras_files   = True # merge all the rasters together for a region or country
-prev_first_yr          = 2011  # used in case we need to have missing CDL for a year
-first_yr               = 2011
-last_yr                = 2013
-base_yr                = 2013  # This is the raster which will be used to fill in the gaps
-list_min_area_rot      = [0.8]#[0.8]#[0.0,0.15,0.3,0.45,0.6,0.75,0.8,0.9,1.0]#[0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,0.0,0.1]  # KEY PARAM: The minimum area of the state which should be covered by our derived crop rotations to stop finding out new rotations
-list_min_perc_of_rot   = [0.005]#[0.005]#[0.0,0.005,0.01,0.05,0.1,0.2,0.6,1.0]#[0.0,0.005,0.01,0.015,0.02,0.04,0.06,0.08,0.1,0.15,0.2,0.4,0.6,0.8,1.0] # KEY PARAM: The minimum rate of increase of selecting new crop rotations before our algorithm is stopped
+prev_first_yr          = 2008  # used in case we need to have missing CDL for a year
+first_yr               = 2008
+last_yr                = 2010
+base_yr                = 2010  # This is the raster which will be used to fill in the gaps
+list_min_area_rot      = [0.6]#[0.8]#[0.0,0.15,0.3,0.45,0.6,0.75,0.8,0.9,1.0]#[0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,0.0,0.1]  # KEY PARAM: The minimum area of the state which should be covered by our derived crop rotations to stop finding out new rotations
+list_min_perc_of_rot   = [0.05]#[0.005]#[0.0,0.005,0.01,0.05,0.1,0.2,0.6,1.0]#[0.0,0.005,0.01,0.015,0.02,0.04,0.06,0.08,0.1,0.15,0.2,0.4,0.6,0.8,1.0] # KEY PARAM: The minimum rate of increase of selecting new crop rotations before our algorithm is stopped
 #list_min_area_rot     = [0.65]#[0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 #list_min_perc_of_rot  = [0.01]#[0.0,0.001,0.005,0.01,1]
-remove_urban_and_wtlnd = False #Should be false if you want to create a wall to wall product
+remove_urban_and_wtlnd = True #Should be false if you want to create a wall to wall product
 
 RECL_FAO                = 'recl_crops_glm.txt'
 GRASSLANDS              = 'grasslands_all.txt'
 FORESTS                 = 'forests_all.txt'
 CROPS                   = 'crops_all.txt'
+CROPS_GLM               = 'crops_glm.txt'
 URBAN_WETLANDS          = 'urban_wetlands.txt'
 # Determine the crop rotation sequence
 #############################################################################
@@ -101,6 +102,9 @@ URBAN_WETLANDS          = 'urban_wetlands.txt'
 # 52    Lentils
 # 53    Peas
 ##############################################################################
+
+# FAO reclassification
+# 301 C3 Annual, 302 C3 Perennial, 303 C4 Annual, 304 C4 Perennial, 305 N fixing
 
 def convert(types, values):
     return [t(v) for t, v in zip(types, values)]
@@ -161,14 +165,17 @@ def reclass_CDL_to_GLM(out_dir, ras_files):
 
     try:
         for ras in ras_files:
-            out_fl = out_dir+os.sep+'glm_'+os.path.basename(ras)[:-11][-7:]
+            out_fl = out_dir+os.sep+'glm'+os.path.basename(ras)[:-11][-14:]+\
+                     os.path.basename(ras)[-11:]
 
             out_ras = ReclassByASCIIFile(ras, RECL_FAO)
             out_ras.save(out_fl)
             glm_ras_files.append(out_fl)
+            rasters_to_delete.append(out_fl)
     except:
         logging.info(arcpy.GetMessages())
 
+    logging.info('Converted to GLM classification C3/C4')
     return glm_ras_files
 
 ###############################################################################
@@ -337,8 +344,12 @@ def computeCropRotations(state, out_dir, crp_rot_files, local_first_yr, local_la
         
             logger.info('\tExtracting attributes for raster ' + os.path.split(crp_rot_files[i])[1]) 
             # Simplify each of the rasters: i.e.extract the crop information
-    
-            crop_cdl_2_str = returnLandUses(analysis_dir+os.sep+CROPS)
+
+            if DO_GLM:
+                crop_cdl_2_str = returnLandUses(analysis_dir+os.sep+CROPS_GLM)
+            else:
+                crop_cdl_2_str = returnLandUses(analysis_dir+os.sep+CROPS)
+                
             dir_path = os.path.dirname(crp_rot_files[i])
             file_name = os.path.basename(crp_rot_files[i])[:-11][-7:]
             # Copy the TIF file to a GRID file to avoid a ArcGIS bug
@@ -346,6 +357,7 @@ def computeCropRotations(state, out_dir, crp_rot_files, local_first_yr, local_la
                 arcpy.CopyRaster_management(crp_rot_files[i], out_dir+os.sep+file_name)
                 crp_rot_files[i] = out_dir+os.sep+file_name
                 rasters_to_delete.append(out_dir+os.sep+file_name)
+                logging.info('Copy raster '+crp_rot_files[i])
             except:
                 logging.info('Copy raster '+crp_rot_files[i]+' failed')
             # Save output of extraction as ras_<state name>_<yr of rotation>
@@ -383,6 +395,7 @@ def computeCropRotations(state, out_dir, crp_rot_files, local_first_yr, local_la
         # Combine the simplified rasters
     
         logger.info('Merging all CDLs')
+
         out_combine = Combine(all_inp_rasters)
         out_combine.save(comb_rasters)
         
@@ -710,8 +723,6 @@ def initiate(list_min_area_rot, list_min_rate_increase, local_first_yr, local_la
                             frst = True 
                         state_ras_files.append(''.join(list_files))
 
-        print state_ras_files
-        pdb.set_trace()
         if DO_GLM:
             # Convert state_ras_files to format compatible with GLM
             state_ras_files = reclass_CDL_to_GLM(out_dir, state_ras_files)
@@ -794,7 +805,7 @@ existing_inp_dir = ''
 for a in list_min_area_rot:
     for b in list_min_perc_of_rot:
         date           = datetime.datetime.now().strftime("%H-%M") 
-        tag            = 'OH_'+date+'_'+str(a)+'_'+str(b)
+        tag            = 'USA_GLM_08_10_'+date+'_'+str(a)+'_'+str(b)
         ROTATION_STATS = 'rot_stats_'+tag+'.csv'
         READABLE_ROTS  = 'human_readable_rotations_'+date+'.csv'
         seq = []
